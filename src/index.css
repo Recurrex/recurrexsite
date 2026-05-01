@@ -35,10 +35,10 @@
     --radius: 1rem;
 
     /* Brand gradient stops */
-    --brand-1: 187 92% 54%;   /* cyan  #22d3ee */
-    --brand-2: 239 84% 67%;   /* indigo #6366f1 */
-    --brand-3: 271 91% 65%;   /* violet #a855f7 */
-    --brand-4: 330 81% 60%;   /* magenta #ec4899 */
+    --brand-1: 18 95% 58%;    /* orange-red */
+    --brand-2: 8 88% 54%;     /* vivid red */
+    --brand-3: 0 82% 48%;     /* deep red */
+    --brand-4: 348 78% 38%;   /* crimson */
 
     --gradient-brand: linear-gradient(
       135deg,
