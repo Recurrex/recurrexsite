@@ -64,9 +64,9 @@ const About = () => {
         {/* Hero */}
         <header className="mt-8 animate-fade-in">
           <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">About</p>
-          <h1 className="mt-3 flex items-center gap-3 font-display text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
+          <h1 className="mt-3 flex items-center gap-3 text-5xl sm:text-6xl lg:text-7xl font-medium italic tracking-tight" style={{ fontFamily: "'Cormorant Garamond', 'Playfair Display', Georgia, serif" }}>
             <Rocket className="h-10 w-10 sm:h-12 sm:w-12 text-brand-gradient" />
-            <span className="text-brand-gradient">RECURREX</span>
+            <span className="text-brand-gradient">Recurrex</span>
           </h1>
           <p className="mt-6 font-display text-xl sm:text-2xl font-semibold">
             Turning Vision into Code.
