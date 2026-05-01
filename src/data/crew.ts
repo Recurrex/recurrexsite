@@ -114,6 +114,7 @@ export const CREW: Record<string, CrewMemberData> = {
       { label: "LeetCode", href: "https://leetcode.com/u/AritraaChakraborty", icon: "leetcode" },
       { label: "Instagram", href: "https://instagram.com/4ritraa", icon: "instagram" },
       { label: "X", href: "https://x.com/ItsMeArBhai", icon: "x" },
+      { label: "mail", href: "aritraa4work@gmail.com", icon: "mail" },
     ],
   },
 };
