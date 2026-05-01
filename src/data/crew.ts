@@ -65,7 +65,7 @@ export const CREW: Record<string, CrewMemberData> = {
     ],
     education: [
       {
-        level: "B.Tech, Electronics & Communication Engineering (CS Focused)",
+        level: "B.Tech - Electronics & Communication Engineering (CS Focused)",
         institution: "Institute of Engineering and Management",
         period: "2025 — Present",
       },
