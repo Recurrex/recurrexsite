@@ -6,7 +6,11 @@ export const RotatingBadge = () => (
     aria-label="Recurrex — Turning Vision into Code"
     className="fixed bottom-5 left-5 z-40 grid h-28 w-28 place-items-center sm:h-32 sm:w-32"
   >
-    <svg viewBox="0 0 200 200" className="absolute inset-0 h-full w-full animate-spin-slow">
+    <svg
+      viewBox="0 0 200 200"
+      className="absolute inset-0 h-full w-full animate-spin-slow"
+      style={{ transformOrigin: "center center", transformBox: "view-box" }}
+    >
       <defs>
         <path
           id="rec-circle"
