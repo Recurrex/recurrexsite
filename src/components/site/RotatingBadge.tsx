@@ -1,3 +1,5 @@
+import logoImg from "@/assets/recurrex-logo.jpg";
+
 export const RotatingBadge = () => (
   <a
     href="#top"
@@ -25,8 +27,10 @@ export const RotatingBadge = () => (
         </textPath>
       </text>
     </svg>
-    <span className="grid h-14 w-14 sm:h-16 sm:w-16 place-items-center rounded-full bg-brand-gradient text-white font-display text-xl font-bold shadow-glow">
-      R
-    </span>
+    <img
+      src={logoImg}
+      alt="Recurrex logo"
+      className="h-14 w-14 sm:h-16 sm:w-16 rounded-full object-cover shadow-glow ring-2 ring-white/10"
+    />
   </a>
 );
