@@ -56,7 +56,8 @@ export const CREW: Record<string, CrewMemberData> = {
     role: "AI Engineer",
     photo: aritraaPhoto,
     summary:
-      "I'm Aritraa, an AI Enthusiast and Researcher dedicated to building the next generation of intelligent systems. With an interest in software engineering and AI/ML research, I bridge the gap between complex algorithms and production-grade applications. I thrive on turning ambitious ideas into functional, scalable code.",
+      "I'm Aritraa, an AI Enthusiast and Researcher dedicated to building the next generation of intelligent systems. With an interest in software engineering and AI/ML research, I bridge the gap between complex algorithms and production-grade applications. I thrive on turning ambitious ideas into functional, scalable code.
+Contact : aritraa4work@gmail.com",
     skills: [
       { group: "Languages", items: ["Python", "C", "SQL"] },
       { group: "AI / ML", items: ["Deep Learning", "PyTorch"] },
