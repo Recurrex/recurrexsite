@@ -30,6 +30,14 @@ const PROJECTS = [
     desc: "A high-stakes survival game built with HTML, vanilla JavaScript, and CSS3.",
   },
   {
+    name: "Deep Shield 360",
+    desc: "An AIML-driven video analysis software for intelligent surveillance and insights.",
+  },
+  {
+    name: "Velo",
+    desc: "An intelligent \"Snap & Dispatch\" platform developed by Recurrex.",
+  },
+  {
     name: "Future Innovations",
     desc: "We are constantly ideating our next build to tackle global issues.",
   },
