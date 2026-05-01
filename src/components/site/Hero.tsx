@@ -1,13 +1,12 @@
 import { ArrowDown } from "lucide-react";
-import { SplatterBackdrop } from "./SplatterBackdrop";
+import heroImg from "@/assets/hero.png";
 
 export const Hero = () => (
   <section id="top" className="relative">
     <div className="container grid gap-10 py-12 md:py-20 lg:grid-cols-2 lg:items-center lg:gap-16 lg:py-28">
       <div className="relative mx-auto w-full max-w-md aspect-square animate-fade-in">
-        <SplatterBackdrop />
         <img
-          src="/placeholder.svg"
+          src={heroImg}
           alt="Recurrex hero portrait"
           className="relative h-full w-full object-contain drop-shadow-2xl"
         />
