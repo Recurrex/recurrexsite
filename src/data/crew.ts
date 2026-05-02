@@ -1,6 +1,7 @@
 import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
+import mainakPhoto from "@/assets/crew/mainak-saha.jpg";
 
 export type SocialLink = {
   label: string;
@@ -221,6 +222,57 @@ export const CREW: Record<string, CrewMemberData> = {
       { label: "GitHub", href: "https://github.com/ankitkabiratna07", icon: "github" },
       { label: "Instagram", href: "https://www.instagram.com/a_n_kit_22", icon: "instagram" },
       { label: "mail", href: "mailto:ankitkabiratna193@gmail.com", icon: "mail" },
+    ],
+  },
+  "mainaksaha": {
+    slug: "mainaksaha",
+    name: "Mainak Saha",
+    pronouns: "he/him",
+    role: "Hardware Engineer",
+    photo: mainakPhoto,
+    summary:
+      "I'm Mainak, a hardware enthusiast and aspiring Electronics Engineer with a deep fascination for computer architecture and embedded systems. I specialize in bridging the gap between software and physical components, with practical experience in Arduino prototyping and low-level programming in C and Python. From troubleshooting motherboard circuitry to building custom electronics, I thrive on understanding how complex systems operate from the silicon up.",
+    skills: [
+      { group: "Languages", items: ["Python", "C", "HTML", "CSS"] },
+      { group: "Core CS", items: ["Problem Solving"] },
+      { group: "Tools", items: ["Git", "Arduino"] },
+      { group: "Domain", items: ["Computer Architecture"] },
+    ],
+    education: [
+      {
+        level: "B.Tech - Electronics and Communication Engineering",
+        institution: "Institute of Engineering and Management",
+        period: "2025 — Present",
+      },
+      {
+        level: "School",
+        institution: "Jadavpur Vidyapith",
+        period: "2011 — 2025",
+      },
+    ],
+    experience: [],
+    projects: [
+      {
+        name: "Deep-Shield 360",
+        description:
+          "An AI/ML-driven project focused on advanced video analysis and security.",
+      },
+      {
+        name: "Silence: Demon Realm",
+        description:
+          "An interactive, JavaScript-based system (HTML/JS) demonstrating real-time logic handling and complex user interaction design.",
+      },
+    ],
+    interests: [
+      "Embedded Systems & Robotics",
+      "Electronics Engineering & PC Hardware Research",
+      "Hardware-level Troubleshooting & System Assembly",
+    ],
+    socials: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/mainak-saha-7169a3389", icon: "linkedin" },
+      { label: "GitHub", href: "https://github.com/MainakSaha22", icon: "github" },
+      { label: "Instagram", href: "https://www.instagram.com/lost.world_22s", icon: "instagram" },
+      { label: "mail", href: "mailto:sahamainak59@gmail.com", icon: "mail" },
     ],
   },
 };

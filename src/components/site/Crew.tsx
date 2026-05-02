@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
+import mainakPhoto from "@/assets/crew/mainak-saha.jpg";
 
 const MEMBERS: { slug: string; name: string; role: string; initials: string; photo?: string }[] = [
   { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC", photo: aritraaPhoto },
   { slug: "joymukherjee", name: "Joy Mukherjee", role: "Full Stack Developer", initials: "JM", photo: joyPhoto },
   { slug: "ankitkabiratna", name: "Ankit Kabiratna", role: "Frontend Developer", initials: "AK", photo: ankitPhoto },
   { slug: "abir-banik", name: "Abir Banik", role: "Robotics & IoT Engineer", initials: "AB" },
-  { slug: "mainak-saha", name: "Mainak Saha", role: "Backend Developer", initials: "MS" },
+  { slug: "mainaksaha", name: "Mainak Saha", role: "Hardware Engineer", initials: "MS", photo: mainakPhoto },
 ];
 
 export const Crew = () => (
