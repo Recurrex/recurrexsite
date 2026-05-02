@@ -2,7 +2,7 @@ import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
 import mainakPhoto from "@/assets/crew/mainak-saha.jpg";
-
+import abirPhoto from "@/assets/crew/abir-banik.jpg";
 export type SocialLink = {
   label: string;
   href: string;
@@ -273,6 +273,57 @@ export const CREW: Record<string, CrewMemberData> = {
       { label: "GitHub", href: "https://github.com/MainakSaha22", icon: "github" },
       { label: "Instagram", href: "https://www.instagram.com/lost.world_22s", icon: "instagram" },
       { label: "mail", href: "mailto:sahamainak59@gmail.com", icon: "mail" },
+    ],
+  },
+  "abirbanik": {
+    slug: "abirbanik",
+    name: "Abir Banik",
+    pronouns: "he/him",
+    role: "Robotics & IoT Engineer",
+    photo: abirPhoto,
+    summary:
+      "I'm Abir Banik, Hardware enthusiast and aspiring Electronics and Communication Engineer with a growing interest in cybersecurity, artificial intelligence, and embedded systems. Skilled in problem-solving and programming, with experience in C and foundational knowledge of AI-driven systems. Passionate about building practical solutions that address real-world problems, particularly in digital security and smart technologies, while continuously exploring how software integrates with hardware systems.",
+    skills: [
+      { group: "Languages", items: ["Python", "C", "HTML", "CSS"] },
+      { group: "Core CS", items: ["Problem Solving","Data Structures (Basic)"] },
+      { group: "Tools", items: ["Git", "Development IDEs"] },
+      { group: "Domain", items: ["Cybersecurity"] },
+    ],
+    education: [
+      {
+        level: "B.Tech - Electronics and Communication Engineering",
+        institution: "Institute of Engineering and Management",
+        period: "2025 — Present",
+      },
+      {
+        level: "School",
+        institution: "DAV Public School",
+        period: "2011 — 2025",
+      },
+    ],
+    experience: [],
+    projects: [
+      {
+        name: "Deep-Shield 360",
+        description:
+          "An AI/ML-driven project focused on advanced video analysis and security.",
+      },
+      {
+        name: "Smart Technology Concept Project",
+        description:
+          "Developed conceptual solutions focused on applying technology to real-world challenges, strengthening system design and implementation thinking.",
+      },
+    ],
+    interests: [
+      "Embedded Systems & Robotics",
+      "Ethical Tech & Artificial Intelligence",
+      "Reading (Fiction, Sci-Fi, Thought-Provoking Books)",
+    ],
+    socials: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/abir-banik-574086373?utm_source=share_via&utm_content=profile&utm_medium=member_android", icon: "linkedin" },
+      { label: "GitHub", href: "https://github.com/AbBa-07", icon: "github" },
+      { label: "Instagram", href: "https://www.instagram.com/abirbanik07?igsh=MXByNHIwenV2ajI4YQ==", icon: "instagram" },
+      { label: "mail", href: "mailto:abirbanik2007.01@gmail.com", icon: "mail" },
     ],
   },
 };
