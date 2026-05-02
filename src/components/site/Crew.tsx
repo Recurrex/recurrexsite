@@ -15,7 +15,7 @@ const MEMBERS: { slug: string; name: string; role: string; initials: string; pho
 
 export const Crew = () => (
   <section id="crew" className="container py-20 md:py-28 scroll-mt-20">
-    <SectionHeader eyebrow="Crew" title="The collective" />
+    <SectionHeader eyebrow="01 / Crew" title="The collective" />
     <div className="mt-12 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
       {MEMBERS.map((m) => (
         <Link
