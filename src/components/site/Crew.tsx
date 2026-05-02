@@ -9,7 +9,7 @@ const MEMBERS: { slug: string; name: string; role: string; initials: string; pho
   { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC", photo: aritraaPhoto },
   { slug: "joymukherjee", name: "Joy Mukherjee", role: "Full Stack Developer", initials: "JM", photo: joyPhoto },
   { slug: "ankitkabiratna", name: "Ankit Kabiratna", role: "Frontend Developer", initials: "AK", photo: ankitPhoto },
-  { slug: "abir-banik", name: "Abir Banik", role: "Robotics & IoT Engineer", initials: "AB" },
+  { slug: "abirbanik", name: "Abir Banik", role: "Robotics & IoT Engineer", initials: "AB" },
   { slug: "mainaksaha", name: "Mainak Saha", role: "Hardware Engineer", initials: "MS", photo: mainakPhoto },
 ];
 
