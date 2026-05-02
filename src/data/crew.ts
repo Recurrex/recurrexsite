@@ -1,5 +1,6 @@
 import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
+import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
 
 export type SocialLink = {
   label: string;
@@ -172,6 +173,52 @@ export const CREW: Record<string, CrewMemberData> = {
       },
       { label: "GitHub", href: "https://github.com/JoyMukherjee3012", icon: "github" },
       { label: "mail", href: "mailto:joymukh3012@gmail.com", icon: "mail" },
+    ],
+  },
+  "ankitkabiratna": {
+    slug: "ankitkabiratna",
+    name: "Ankit Kabiratna",
+    pronouns: "he/him",
+    role: "Frontend Developer",
+    photo: ankitPhoto,
+    summary:
+      "I'm Ankit, an Electronics and Communication Engineering undergraduate at Institute of Engineering and Management with a strong interest in software development and problem-solving. I focus on building practical, efficient solutions while developing a solid foundation in programming and core computer science concepts. With an interest in both software and embedded systems, I aim to bridge the gap between hardware and software by creating scalable and impactful real-world applications.",
+    skills: [
+      { group: "Languages", items: ["Python", "C++", "SQL", "CSS", "Java"] },
+      { group: "Core CS", items: ["Data Structures (Basics)", "Algorithms (Beginner)", "Problem Solving"] },
+      { group: "Tools", items: ["Git", "Arduino"] },
+    ],
+    education: [
+      {
+        level: "B.Tech - Electronics and Communication Engineering",
+        institution: "Institute of Engineering and Management",
+        period: "2025 — Present",
+      },
+      {
+        level: "School",
+        institution: "Sudhir Memorial Institute",
+        period: "2011 — 2025",
+      },
+    ],
+    experience: [],
+    projects: [
+      {
+        name: "Velo",
+        description:
+          "Contributed to frontend development of an AI-powered service platform — built UI components, improved user experience, and worked on creating responsive and user-friendly interfaces.",
+      },
+      {
+        name: "Fire Detection System",
+        description:
+          "An Arduino-based system designed to detect fire hazards using sensors and trigger real-time alerts through a buzzer system.",
+      },
+    ],
+    interests: ["Software Development", "Embedded Systems", "Problem Solving"],
+    socials: [
+      { label: "LinkedIn", href: "https://www.linkedin.com/in/ankit-kabiratna-389323368", icon: "linkedin" },
+      { label: "GitHub", href: "https://github.com/ankitkabiratna07", icon: "github" },
+      { label: "Instagram", href: "https://www.instagram.com/a_n_kit_22", icon: "instagram" },
+      { label: "mail", href: "mailto:ankitkabiratna193@gmail.com", icon: "mail" },
     ],
   },
 };
