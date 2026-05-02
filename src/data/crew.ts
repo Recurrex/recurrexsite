@@ -1,5 +1,6 @@
 import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
+import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
 
 export type SocialLink = {
   label: string;
