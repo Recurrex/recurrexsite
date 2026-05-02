@@ -3,6 +3,7 @@ import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
 import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 import ankitPhoto from "@/assets/crew/ankit-kabiratna.jpg";
 import mainakPhoto from "@/assets/crew/mainak-saha.jpg";
+import abirPhoto from "@/assets/crew/abir-banik.jpg";
 
 const MEMBERS: { slug: string; name: string; role: string; initials: string; photo?: string }[] = [
   { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC", photo: aritraaPhoto },
