@@ -172,6 +172,7 @@ export const CREW: Record<string, CrewMemberData> = {
         icon: "linkedin",
       },
       { label: "GitHub", href: "https://github.com/JoyMukherjee3012", icon: "github" },
+      { label: "X", href: "https://x.com/Joy_3012_", icon: "x" },
       { label: "mail", href: "mailto:joymukh3012@gmail.com", icon: "mail" },
     ],
   },
