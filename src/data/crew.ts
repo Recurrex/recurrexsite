@@ -1,4 +1,5 @@
 import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
+import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 
 export type SocialLink = {
   label: string;
@@ -122,7 +123,7 @@ export const CREW: Record<string, CrewMemberData> = {
     name: "Joy Mukherjee",
     pronouns: "he/him",
     role: "Full Stack Developer",
-    photo: aritraaPhoto, // placeholder until a real photo is provided
+    photo: joyPhoto,
     summary:
       "I'm Joy Mukherjee, a Full Stack Developer and Computer Science undergraduate at the Institute of Engineering and Management. I specialize in building practical, scalable solutions that address real-world problems. With a strong foundation in both frontend and backend technologies, I focus on creating applications that are efficient, user-centric, and impactful.",
     skills: [
