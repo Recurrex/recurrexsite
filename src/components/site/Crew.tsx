@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import aritraaPhoto from "@/assets/crew/aritraa-chakraborty.jpg";
+import joyPhoto from "@/assets/crew/joy-mukherjee.jpg";
 
-const MEMBERS = [
-  { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC" },
-  { slug: "joymukherjee", name: "Joy Mukherjee", role: "Full Stack Developer", initials: "JM" },
+const MEMBERS: { slug: string; name: string; role: string; initials: string; photo?: string }[] = [
+  { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC", photo: aritraaPhoto },
+  { slug: "joymukherjee", name: "Joy Mukherjee", role: "Full Stack Developer", initials: "JM", photo: joyPhoto },
   { slug: "ankit-kabiratna", name: "Ankit Kabiratna", role: "Frontend Developer", initials: "AK" },
   { slug: "abir-banik", name: "Abir Banik", role: "Robotics & IoT Engineer", initials: "AB" },
   { slug: "mainak-saha", name: "Mainak Saha", role: "Backend Developer", initials: "MS" },
@@ -18,9 +20,15 @@ export const Crew = () => (
           to={`/crew/${m.slug}`}
           className="group gradient-border relative flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-card transition-transform hover:-translate-y-1"
         >
-          <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-gradient text-sm font-semibold text-white">
-            {m.initials}
-          </span>
+          {m.photo ? (
+            <span className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full ring-2 ring-transparent [background:padding-box_hsl(var(--card)),border-box_var(--brand-gradient)] [border:2px_solid_transparent]">
+              <img src={m.photo} alt={m.name} className="h-full w-full rounded-full object-cover" />
+            </span>
+          ) : (
+            <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-gradient text-sm font-semibold text-white">
+              {m.initials}
+            </span>
+          )}
           <span className="min-w-0">
             <span className="block font-medium leading-tight truncate">{m.name}</span>
             <span className="block text-xs text-muted-foreground truncate">{m.role}</span>
