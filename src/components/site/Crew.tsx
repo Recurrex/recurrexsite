@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
 const MEMBERS = [
-  { slug: "aritraa-chakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC" },
-  { slug: "joy-mukherjee", name: "Joy Mukherjee", role: "Software Engineer", initials: "JM" },
+  { slug: "aritraachakraborty", name: "Aritraa Chakraborty", role: "AI Engineer", initials: "AC" },
+  { slug: "joymukherjee", name: "Joy Mukherjee", role: "Full Stack Developer", initials: "JM" },
   { slug: "ankit-kabiratna", name: "Ankit Kabiratna", role: "Frontend Developer", initials: "AK" },
   { slug: "abir-banik", name: "Abir Banik", role: "Robotics & IoT Engineer", initials: "AB" },
   { slug: "mainak-saha", name: "Mainak Saha", role: "Backend Developer", initials: "MS" },

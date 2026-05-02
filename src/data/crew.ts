@@ -49,8 +49,8 @@ export type CrewMemberData = {
 };
 
 export const CREW: Record<string, CrewMemberData> = {
-  "aritraa-chakraborty": {
-    slug: "aritraa-chakraborty",
+  "aritraachakraborty": {
+    slug: "aritraachakraborty",
     name: "Aritraa Chakraborty",
     pronouns: "he/him",
     role: "AI Engineer",
@@ -115,6 +115,62 @@ export const CREW: Record<string, CrewMemberData> = {
       { label: "Instagram", href: "https://instagram.com/4ritraa", icon: "instagram" },
       { label: "X", href: "https://x.com/ItsMeArBhai", icon: "x" },
       { label: "mail", href: "aritraa4work@gmail.com", icon: "mail" },
+    ],
+  },
+  "joymukherjee": {
+    slug: "joymukherjee",
+    name: "Joy Mukherjee",
+    pronouns: "he/him",
+    role: "Full Stack Developer",
+    photo: aritraaPhoto, // placeholder until a real photo is provided
+    summary:
+      "I'm Joy Mukherjee, a Full Stack Developer and Computer Science undergraduate at the Institute of Engineering and Management. I specialize in building practical, scalable solutions that address real-world problems. With a strong foundation in both frontend and backend technologies, I focus on creating applications that are efficient, user-centric, and impactful.",
+    skills: [
+      { group: "Languages", items: ["Python", "SQL"] },
+      { group: "Frontend", items: ["React"] },
+      { group: "Backend & Database", items: ["Firebase", "Firestore"] },
+      { group: "Tools & Version Control", items: ["Git"] },
+      { group: "Core", items: ["Problem Solving"] },
+    ],
+    education: [
+      {
+        level: "B.Tech - Computer Science and Application",
+        institution: "Institute of Engineering and Management",
+        period: "2025 — Present",
+      },
+      {
+        level: "Higher Secondary",
+        institution: "DAV Model School, Durgapur",
+        period: "2023 — 2025",
+      },
+      {
+        level: "Primary & Secondary",
+        institution: "St. Xavier's School, Durgapur",
+        period: "2011 — 2023",
+      },
+    ],
+    experience: [],
+    projects: [
+      {
+        name: "Career Compass",
+        description:
+          "A backend-driven platform designed to guide students in choosing the right courses and colleges by analyzing their strengths and weaknesses. Focused on delivering personalized and data-driven recommendations.",
+      },
+      {
+        name: "Velo",
+        description:
+          "An AI-powered triage platform that identifies everyday service issues (such as electrical or appliance failures), compares market prices, enables user negotiation, and dispatches services based on provider acceptance.",
+      },
+    ],
+    interests: ["Full Stack Development", "Problem Solving", "Open Source"],
+    socials: [
+      {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/in/joy-mukherjee-4b9b08374",
+        icon: "linkedin",
+      },
+      { label: "GitHub", href: "https://github.com/JoyMukherjee3012", icon: "github" },
+      { label: "mail", href: "mailto:joymukh3012@gmail.com", icon: "mail" },
     ],
   },
 };

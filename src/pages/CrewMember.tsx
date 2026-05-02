@@ -208,6 +208,7 @@ const CrewMember = () => {
             </Card>
 
             {/* Experience */}
+            {member.experience.length > 0 && (
             <Card className="md:col-span-3">
               <CardHeader icon={<Briefcase className="h-5 w-5" />} title="Experience" />
               <div className="mt-4 space-y-4">
@@ -227,9 +228,10 @@ const CrewMember = () => {
                 ))}
               </div>
             </Card>
+            )}
 
             {/* Projects */}
-            <Card className="md:col-span-3">
+            <Card className={member.experience.length > 0 ? "md:col-span-3" : "md:col-span-6"}>
               <CardHeader icon={<Rocket className="h-5 w-5" />} title="Projects" />
               <div className="mt-4 space-y-3">
                 {member.projects.map((p) => (
