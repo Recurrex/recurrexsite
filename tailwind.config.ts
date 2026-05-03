@@ -80,6 +80,10 @@ export default {
           "0%, 100%": { boxShadow: "0 0 30px -5px hsl(var(--brand-3) / 0.5)" },
           "50%": { boxShadow: "0 0 50px 0px hsl(var(--brand-3) / 0.8)" },
         },
+        "breathing-glow": {
+          "0%, 100%": { opacity: "0.35", transform: "scale(1)" },
+          "50%": { opacity: "0.7", transform: "scale(1.08)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -87,6 +91,7 @@ export default {
         "fade-in": "fade-in 0.6s ease-out both",
         "spin-slow": "spin-slow 18s linear infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
+        "breathing-glow": "breathing-glow 2.8s ease-in-out infinite",
       },
     },
   },

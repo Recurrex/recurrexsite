@@ -7,7 +7,7 @@ import { SocialIcons } from "./SocialIcons";
 type NavItem = { label: string; href: string; to?: string };
 const NAV: NavItem[] = [
   { label: "Home", href: "/#top" },
-  { label: "Crew", href: "/#crew" },
+  { label: "Crew", href: "/crew", to: "/crew" },
   { label: "Projects", href: "/#projects" },
   { label: "Achievements", href: "/#achievements" },
   { label: "Gallery", href: "/#gallery" },

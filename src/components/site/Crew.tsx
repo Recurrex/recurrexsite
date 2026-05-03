@@ -20,7 +20,7 @@ export const Crew = () => (
       {MEMBERS.map((m) => (
         <Link
           key={m.slug}
-          to={`/crew/${m.slug}`}
+          to="/crew"
           className="group gradient-border relative flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-card transition-transform hover:-translate-y-1"
         >
           {m.photo ? (

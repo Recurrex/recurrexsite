@@ -100,12 +100,14 @@ const About = () => {
         <Section icon={<Users className="h-5 w-5" />} title="The Collective">
           <ul className="grid gap-2 sm:grid-cols-2">
             {CREW.map((name) => (
-              <li
-                key={name}
-                className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3"
-              >
-                <span className="h-2 w-2 rounded-full bg-brand-gradient" />
-                <span className="font-medium">{name}</span>
+              <li key={name}>
+                <Link
+                  to="/crew"
+                  className="flex items-center gap-3 rounded-xl border border-border bg-card px-4 py-3 transition-colors hover:border-foreground/40 hover:bg-muted"
+                >
+                  <span className="h-2 w-2 rounded-full bg-brand-gradient" />
+                  <span className="font-medium">{name}</span>
+                </Link>
               </li>
             ))}
           </ul>
