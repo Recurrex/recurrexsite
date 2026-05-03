@@ -119,12 +119,14 @@ const About = () => {
         <Section icon={<Wrench className="h-5 w-5" />} title="Projects in Development">
           <ul className="space-y-3">
             {PROJECTS.map((p) => (
-              <li
-                key={p.name}
-                className="rounded-xl border border-border bg-card p-4"
-              >
-                <p className="font-display font-semibold">{p.name}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
+              <li key={p.name}>
+                <Link
+                  to="/projects"
+                  className="block rounded-xl border border-border bg-card p-4 transition-colors hover:border-foreground/40 hover:bg-muted"
+                >
+                  <p className="font-display font-semibold">{p.name}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
+                </Link>
               </li>
             ))}
           </ul>
