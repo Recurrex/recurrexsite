@@ -21,20 +21,20 @@ const teaser = (s: string) => {
 
 const CrewPage = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
 
       <main className="container py-12 md:py-20 max-w-6xl">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-sm text-white/60 hover:text-white transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <ArrowLeft className="h-4 w-4" />
           Back to home
         </Link>
 
         <header className="mt-8 animate-fade-in">
-          <p className="text-xs uppercase tracking-[0.3em] text-white/50">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
             Technical Roster
           </p>
           <h1
@@ -43,7 +43,7 @@ const CrewPage = () => {
           >
             Meet the <span className="text-brand-gradient">Crew</span>
           </h1>
-          <p className="mt-5 max-w-2xl text-base sm:text-lg text-white/60 leading-relaxed">
+          <p className="mt-5 max-w-2xl text-base sm:text-lg text-muted-foreground leading-relaxed">
             Five operators. One collective. Click any profile to open their full
             portfolio.
           </p>
@@ -57,15 +57,15 @@ const CrewPage = () => {
               <Link
                 key={slug}
                 to={`/crew/${slug}`}
-                className="group relative flex items-center gap-5 rounded-2xl border border-white/10 bg-black p-5 transition-all duration-300 hover:bg-[#0A0A0A] hover:border-red-500/40 hover:backdrop-blur-xl hover:shadow-[0_0_40px_-10px_rgba(239,68,68,0.45)]"
+                className="group relative flex items-center gap-5 rounded-2xl border border-border bg-card p-5 transition-all duration-300 hover:border-[hsl(var(--brand-3))]/50 hover:bg-muted hover:backdrop-blur-xl hover:shadow-[0_0_40px_-10px_hsl(var(--brand-3)/0.5)]"
               >
                 {/* Avatar */}
                 <span className="relative shrink-0">
                   <span
                     aria-hidden
-                    className="absolute inset-0 rounded-full bg-red-500/40 blur-md animate-breathing-glow"
+                    className="absolute inset-0 rounded-full bg-[hsl(var(--brand-3))]/40 blur-md animate-breathing-glow"
                   />
-                  <span className="relative block h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border-2 border-red-500/80 transition-transform duration-300 group-hover:scale-105">
+                  <span className="relative block h-20 w-20 sm:h-24 sm:w-24 overflow-hidden rounded-full border-2 border-[hsl(var(--brand-3))]/80 transition-transform duration-300 group-hover:scale-105">
                     <img
                       src={m.photo}
                       alt={m.name}
@@ -78,7 +78,7 @@ const CrewPage = () => {
                 {/* Content */}
                 <div className="min-w-0 flex-1">
                   <h2
-                    className="truncate text-lg sm:text-xl font-bold text-white"
+                    className="truncate text-lg sm:text-xl font-bold text-foreground"
                     style={{
                       fontFamily:
                         "Inter, 'SF Pro Display', system-ui, sans-serif",
@@ -86,10 +86,10 @@ const CrewPage = () => {
                   >
                     {m.name}
                   </h2>
-                  <p className="mt-0.5 text-sm font-semibold text-red-500">
+                  <p className="mt-0.5 text-sm font-semibold text-[hsl(var(--brand-2))]">
                     {m.role}
                   </p>
-                  <p className="mt-2 text-sm leading-snug text-white/60 line-clamp-2">
+                  <p className="mt-2 text-sm leading-snug text-muted-foreground line-clamp-2">
                     {teaser(m.summary)}
                   </p>
                 </div>
