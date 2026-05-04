@@ -7,7 +7,6 @@ import {
   Lock,
   AlertTriangle,
   Network,
-  LayoutDashboard,
   Mail,
 } from "lucide-react";
 import { Calendar, User, Tag } from "lucide-react";
@@ -15,6 +14,10 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ThemeToggle } from "@/components/site/ThemeToggle";
 import { RotatingBadge } from "@/components/site/RotatingBadge";
+import ds360Hero from "@/assets/ds360-hero.jpg";
+import ds360Architecture from "@/assets/ds360-architecture.png";
+import ds360Dashboard from "@/assets/ds360-dashboard.jpg";
+import ds360Login from "@/assets/ds360-login.jpg";
 
 const today = new Date().toLocaleDateString(undefined, {
   year: "numeric",
@@ -64,9 +67,24 @@ const FEATURES = [
 ];
 
 const DIAGRAMS = [
-  { title: "System Architecture", caption: "End-to-end ingestion → AI → alerting flowchart" },
-  { title: "AI Detection Mockup", caption: "Live frame with bounding boxes & confidence scores" },
-  { title: "Dashboard UI Sneak-Peek", caption: "Operator command-center interface" },
+  {
+    title: "System Architecture",
+    caption: "End-to-end ingestion → AI → alerting flowchart",
+    image: ds360Architecture,
+    alt: "Deep Shield 360 system architecture flow diagram",
+  },
+  {
+    title: "AI Detection Mockup",
+    caption: "Live frame with bounding boxes & confidence scores",
+    image: ds360Dashboard,
+    alt: "Deep Shield 360 command center landing interface",
+  },
+  {
+    title: "Dashboard UI Sneak-Peek",
+    caption: "Operator command-center interface",
+    image: ds360Login,
+    alt: "Deep Shield 360 operator DS-ID provisioning screen",
+  },
 ];
 
 const DeepShield360 = () => {
@@ -119,19 +137,20 @@ const DeepShield360 = () => {
             </span>
             <span className="inline-flex items-center gap-2">
               <Tag className="h-4 w-4" />
-              Category: <span className="text-foreground">AI/ML Surveillance</span>
+              Category: <span className="text-foreground">AI/ML</span>
             </span>
           </div>
         </header>
 
         {/* Hero placeholder */}
-        <div className="mt-10 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-brand-1/20 via-brand-3/20 to-brand-4/30 backdrop-blur transition-colors duration-300">
-          <div className="grid h-full w-full place-items-center">
-            <span className="font-display text-5xl sm:text-6xl font-bold text-foreground/10">
-              DEEP-SHIELD
-            </span>
-          </div>
-        </div>
+        <figure className="mt-10 aspect-[16/9] w-full overflow-hidden rounded-2xl border border-border bg-card transition-colors duration-300">
+          <img
+            src={ds360Hero}
+            alt="Deep Shield 360 cinematic command vault with neon shield emblem"
+            className="h-full w-full object-cover"
+            loading="eager"
+          />
+        </figure>
 
         {/* Intro */}
         <Section heading="An Ocean of Video Data">
@@ -197,20 +216,18 @@ const DeepShield360 = () => {
         {/* Diagrams */}
         <Section heading="Visual Briefing">
           <div className="grid gap-5 sm:grid-cols-2">
-            {DIAGRAMS.map((d, i) => (
+            {DIAGRAMS.map((d) => (
               <figure
                 key={d.title}
                 className="group overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-glow"
               >
-                <div className="relative aspect-[16/10] w-full bg-gradient-to-br from-muted to-card">
-                  <div className="absolute inset-0 grid place-items-center">
-                    {i === 0 && <Network className="h-10 w-10 text-foreground/30" />}
-                    {i === 1 && <Camera className="h-10 w-10 text-foreground/30" />}
-                    {i === 2 && <LayoutDashboard className="h-10 w-10 text-foreground/30" />}
-                  </div>
-                  <span className="absolute left-3 top-3 rounded-full bg-background/70 px-2.5 py-1 text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur">
-                    Placeholder
-                  </span>
+                <div className="relative aspect-[16/10] w-full overflow-hidden bg-card">
+                  <img
+                    src={d.image}
+                    alt={d.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
                 </div>
                 <figcaption className="border-t border-border p-4">
                   <p className="font-display font-semibold">{d.title}</p>
