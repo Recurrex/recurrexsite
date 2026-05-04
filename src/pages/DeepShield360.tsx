@@ -8,11 +8,9 @@ import {
   AlertTriangle,
   Network,
   LayoutDashboard,
-  Sparkles,
-  Calendar,
-  User,
-  Tag,
+  Mail,
 } from "lucide-react";
+import { Calendar, User, Tag } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ThemeToggle } from "@/components/site/ThemeToggle";
@@ -69,7 +67,6 @@ const DIAGRAMS = [
   { title: "System Architecture", caption: "End-to-end ingestion → AI → alerting flowchart" },
   { title: "AI Detection Mockup", caption: "Live frame with bounding boxes & confidence scores" },
   { title: "Dashboard UI Sneak-Peek", caption: "Operator command-center interface" },
-  { title: "Recurrex Methodology", caption: "Innovate • Build • Solve" },
 ];
 
 const DeepShield360 = () => {
@@ -210,7 +207,6 @@ const DeepShield360 = () => {
                     {i === 0 && <Network className="h-10 w-10 text-foreground/30" />}
                     {i === 1 && <Camera className="h-10 w-10 text-foreground/30" />}
                     {i === 2 && <LayoutDashboard className="h-10 w-10 text-foreground/30" />}
-                    {i === 3 && <Sparkles className="h-10 w-10 text-foreground/30" />}
                   </div>
                   <span className="absolute left-3 top-3 rounded-full bg-background/70 px-2.5 py-1 text-[10px] uppercase tracking-widest text-muted-foreground backdrop-blur">
                     Placeholder
@@ -225,9 +221,27 @@ const DeepShield360 = () => {
           </div>
         </Section>
 
-        <p className="mt-16 text-center font-display text-lg italic text-muted-foreground">
-          Innovate • Build • Solve
-        </p>
+        {/* Author / sign-off */}
+        <section className="mt-16 animate-fade-in rounded-2xl border border-border bg-card/60 p-6 sm:p-8 backdrop-blur">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">
+            Authored by
+          </p>
+          <p className="mt-2 font-display text-xl font-bold">Aritraa Chakraborty</p>
+          <p className="mt-1 text-sm text-muted-foreground">Recurrex</p>
+
+          <div className="my-6 h-px w-full bg-gradient-to-r from-transparent via-border to-transparent" />
+
+          <p className="text-base text-muted-foreground">
+            Any queries? Feel free to contact us.
+          </p>
+          <a
+            href="mailto:recurrex.ofc@gmail.com"
+            className="mt-3 inline-flex items-center gap-2 rounded-full border border-border bg-background/60 px-4 py-2 text-sm font-medium text-foreground transition-all hover:-translate-y-0.5 hover:shadow-glow"
+          >
+            <Mail className="h-4 w-4" />
+            recurrex.ofc@gmail.com
+          </a>
+        </section>
       </main>
 
       <Footer />
