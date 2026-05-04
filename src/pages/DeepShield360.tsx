@@ -7,7 +7,6 @@ import {
   Lock,
   AlertTriangle,
   Network,
-  LayoutDashboard,
   Mail,
 } from "lucide-react";
 import { Calendar, User, Tag } from "lucide-react";
