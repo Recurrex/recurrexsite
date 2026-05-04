@@ -9,7 +9,7 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    slug: "deep-shield-360",
+    slug: "deepsheild360",
     name: "Deep Shield 360",
     desc: "AIML-driven video analysis software for surveillance intelligence.",
     hue: "from-brand-1/30 to-brand-2/30",

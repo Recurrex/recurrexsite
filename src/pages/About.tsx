@@ -24,22 +24,26 @@ const CREW = [
   "Joy Mukherjee",
 ];
 
-const PROJECTS = [
+const ABOUT_PROJECTS = [
   {
     name: "Silence Game",
     desc: "A high-stakes survival game built with HTML, vanilla JavaScript, and CSS3.",
+    to: "/projects/silence-game",
   },
   {
     name: "Deep Shield 360",
     desc: "An AIML-driven video analysis software for intelligent surveillance and insights.",
+    to: "/projects/deepsheild360",
   },
   {
     name: "Velo",
     desc: "An intelligent \"Snap & Dispatch\" platform developed by Recurrex.",
+    to: "/projects/velo",
   },
   {
     name: "Future Innovations",
     desc: "We are constantly ideating our next build to tackle global issues.",
+    to: "/projects",
   },
 ];
 
@@ -118,10 +122,10 @@ const About = () => {
         {/* Projects in Development */}
         <Section icon={<Wrench className="h-5 w-5" />} title="Projects in Development">
           <ul className="space-y-3">
-            {PROJECTS.map((p) => (
+            {ABOUT_PROJECTS.map((p) => (
               <li key={p.name}>
                 <Link
-                  to="/projects"
+                  to={p.to}
                   className="block rounded-xl border border-border bg-card p-4 transition-colors hover:border-foreground/40 hover:bg-muted"
                 >
                   <p className="font-display font-semibold">{p.name}</p>

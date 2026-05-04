@@ -21,7 +21,7 @@ export const Projects = () => {
         {visible.map((p) => (
           <Link
             key={p.slug}
-            to="/projects"
+            to={`/projects/${p.slug}`}
             className="group gradient-border relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-glow"
           >
             <div className={`relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br ${p.hue}`}>
