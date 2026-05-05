@@ -1,3 +1,5 @@
+import veloCover from "@/assets/velo-hero.png";
+
 export type Project = {
   slug: string;
   name: string;
@@ -5,6 +7,7 @@ export type Project = {
   hue: string;
   createdAt: string;
   uploadedAt: string;
+  cover?: string;
 };
 
 export const PROJECTS: Project[] = [
@@ -23,6 +26,7 @@ export const PROJECTS: Project[] = [
     hue: "from-brand-3/30 to-brand-4/30",
     createdAt: "2025-06-20",
     uploadedAt: "2025-07-10",
+    cover: veloCover,
   },
   {
     slug: "silence-game",
