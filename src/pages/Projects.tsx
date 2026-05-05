@@ -38,11 +38,20 @@ const ProjectsGallery = () => {
               className="group gradient-border relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-glow"
             >
               <div className={`relative aspect-[16/10] w-full overflow-hidden bg-gradient-to-br ${p.hue}`}>
-                <div className="absolute inset-0 grid place-items-center">
-                  <span className="font-display text-5xl font-bold text-foreground/10">
-                    {p.name.split(" ")[0]}
-                  </span>
-                </div>
+                {p.cover ? (
+                  <img
+                    src={p.cover}
+                    alt={`${p.name} cover`}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                ) : (
+                  <div className="absolute inset-0 grid place-items-center">
+                    <span className="font-display text-5xl font-bold text-foreground/10">
+                      {p.name.split(" ")[0]}
+                    </span>
+                  </div>
+                )}
                 <ArrowUpRight className="absolute right-4 top-4 h-5 w-5 text-foreground/60 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
               </div>
               <div className="flex flex-col gap-3 p-5">
