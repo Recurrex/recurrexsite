@@ -11,7 +11,7 @@ const NAV: NavItem[] = [
   { label: "Projects", href: "/projects", to: "/projects" },
   { label: "Achievements", href: "/#achievements" },
   { label: "Gallery", href: "/#gallery" },
-  { label: "Posts", href: "/#posts" },
+  { label: "Posts", href: "/posts", to: "/posts" },
   { label: "Connect", href: "/#connect" },
   { label: "About", href: "/about", to: "/about" },
 ];

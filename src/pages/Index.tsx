@@ -3,6 +3,7 @@ import { Hero } from "@/components/site/Hero";
 import { Crew } from "@/components/site/Crew";
 import { Projects } from "@/components/site/Projects";
 import { Achievements } from "@/components/site/Achievements";
+import { Posts } from "@/components/site/Posts";
 import { Footer } from "@/components/site/Footer";
 import { ThemeToggle } from "@/components/site/ThemeToggle";
 import { RotatingBadge } from "@/components/site/RotatingBadge";
@@ -16,6 +17,7 @@ const Index = () => {
         <Crew />
         <Projects />
         <Achievements />
+        <Posts />
       </main>
       <Footer />
       <RotatingBadge />
