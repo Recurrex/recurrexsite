@@ -28,7 +28,7 @@ export const Posts = () => {
             transition={{ duration: 0.4, delay: i * 0.08 }}
           >
             <Link
-              to="/posts"
+              to={`/posts/${post.id}`}
               className="group gradient-border relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-glow"
             >
               <div className="flex items-center justify-between gap-3 px-5 pt-5">
