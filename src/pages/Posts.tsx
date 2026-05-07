@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ThemeToggle } from "@/components/site/ThemeToggle";
@@ -53,12 +54,15 @@ const Posts = () => {
           <>
             <div className="mt-12 grid gap-6 grid-cols-2 lg:grid-cols-3">
               {visiblePosts.map((post, i) => (
-                <motion.article
+                <motion.div
                   key={post.id}
                   initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.35, delay: i * 0.05 }}
-                  className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card"
+                >
+                <Link
+                  to={`/posts/${post.id}`}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-glow"
                 >
                   {/* Top: author */}
                   <header className="flex items-center justify-between gap-3 px-5 pt-5">
@@ -102,7 +106,7 @@ const Posts = () => {
                   {/* Bottom: caption */}
                   <div className="p-5">
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      {post.caption}
+                      {post.caption.length > 160 ? post.caption.slice(0, 160).trim() + "…" : post.caption}
                     </p>
                   </div>
 
@@ -119,7 +123,8 @@ const Posts = () => {
                       ))}
                     </div>
                   )}
-                </motion.article>
+                </Link>
+                </motion.div>
               ))}
             </div>
 
@@ -138,13 +143,16 @@ const Posts = () => {
         ) : (
           <div className="mt-12 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {GALLERY.map((g, i) => (
-              <motion.figure
+              <motion.div
                 key={`${g.postId}-${i}`}
                 initial={{ opacity: 0, scale: 0.96 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.3, delay: i * 0.03 }}
-                className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-card"
               >
+                <Link
+                  to={`/posts/${g.postId}`}
+                  className="group relative block overflow-hidden rounded-xl border border-border bg-card shadow-card"
+                >
                 <div className="aspect-square overflow-hidden bg-muted">
                   <img
                     src={g.src}
@@ -153,10 +161,11 @@ const Posts = () => {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-3 text-white text-sm font-medium">
                   {g.title}
-                </figcaption>
-              </motion.figure>
+                </div>
+                </Link>
+              </motion.div>
             ))}
           </div>
         )}

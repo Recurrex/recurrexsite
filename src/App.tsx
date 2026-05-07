@@ -13,6 +13,7 @@ import DeepShield360 from "./pages/DeepShield360.tsx";
 import Velo from "./pages/Velo.tsx";
 import About from "./pages/About.tsx";
 import Posts from "./pages/Posts.tsx";
+import PostDetail from "./pages/PostDetail.tsx";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/projects/velo" element={<Velo />} />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:id" element={<PostDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
