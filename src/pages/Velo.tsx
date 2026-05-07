@@ -44,12 +44,6 @@ const PILLARS = [
 
 const DIAGRAMS = [
   {
-    title: "Velo — Critical Response Protocol",
-    caption: "Cover concept: speed, terrain, and coordinated response.",
-    image: veloHero,
-    alt: "Velo critical response protocol cover concept",
-  },
-  {
     title: "Authentication Gateway",
     caption: "Dual-role login — request help or operate as a Pro.",
     image: veloLogin,
@@ -66,6 +60,12 @@ const DIAGRAMS = [
     caption: "User captures the issue with live camera evidence.",
     image: veloReport,
     alt: "Velo report issue capture screen",
+  },
+  {
+    title: "Velo — Critical Response Protocol",
+    caption: "Cover concept: speed, terrain, and coordinated response.",
+    image: veloHero,
+    alt: "Velo critical response protocol cover concept",
   },
 ];
 
