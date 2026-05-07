@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import {
   ArrowLeft,
   ShieldCheck,
@@ -8,22 +9,20 @@ import {
   AlertTriangle,
   Network,
   Mail,
+  Github,
+  Linkedin,
 } from "lucide-react";
 import { Calendar, User, Tag } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { ThemeToggle } from "@/components/site/ThemeToggle";
 import { RotatingBadge } from "@/components/site/RotatingBadge";
-import ds360Hero from "@/assets/ds360-hero.jpg";
+import ds360Hero from "@/assets/ds360-cover.png";
 import ds360Architecture from "@/assets/ds360-architecture.png";
 import ds360Dashboard from "@/assets/ds360-dashboard.jpg";
 import ds360Login from "@/assets/ds360-login.jpg";
 
-const today = new Date().toLocaleDateString(undefined, {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
+const DATE_CREATED = "4 May 2026";
 
 const STACK = [
   {
@@ -82,10 +81,41 @@ const DIAGRAMS = [
   {
     title: "Dashboard UI Sneak-Peek",
     caption: "Operator command-center interface",
-    image: ds360Login,
+    image: ds360Hero,
     alt: "Deep Shield 360 operator DS-ID provisioning screen",
   },
 ];
+
+const LockedNote = ({
+  label,
+  icon,
+}: {
+  label: string;
+  icon: React.ReactNode;
+}) => {
+  const [unlocked, setUnlocked] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={() => setUnlocked(true)}
+      className="group flex w-full items-center justify-between gap-4 rounded-xl border border-border bg-card/60 p-4 text-left backdrop-blur transition-all hover:-translate-y-0.5 hover:border-foreground/40 hover:shadow-glow"
+    >
+      <span className="flex items-center gap-3">
+        <span
+          className="grid h-9 w-9 shrink-0 place-items-center rounded-lg text-white"
+          style={{ background: "var(--gradient-brand)" }}
+        >
+          {icon}
+        </span>
+        <span className="font-display font-semibold">{label}</span>
+      </span>
+      <span className="inline-flex items-center gap-2 text-sm text-muted-foreground">
+        <Lock className="h-4 w-4" />
+        {unlocked ? "Sign in to access" : "Locked"}
+      </span>
+    </button>
+  );
+};
 
 const DeepShield360 = () => {
   return (
@@ -129,7 +159,7 @@ const DeepShield360 = () => {
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2">
               <Calendar className="h-4 w-4" />
-              Date Created: <span className="text-foreground">{today}</span>
+              Date Created: <span className="text-foreground">{DATE_CREATED}</span>
             </span>
             <span className="inline-flex items-center gap-2">
               <User className="h-4 w-4" />
@@ -235,6 +265,17 @@ const DeepShield360 = () => {
                 </figcaption>
               </figure>
             ))}
+          </div>
+        </Section>
+
+        {/* Notes */}
+        <Section heading="Notes">
+          <div className="space-y-3">
+            <LockedNote label="GitHub Repo" icon={<Github className="h-5 w-5" />} />
+            <LockedNote
+              label="LinkedIn Post for Deep Shield 360"
+              icon={<Linkedin className="h-5 w-5" />}
+            />
           </div>
         </Section>
 

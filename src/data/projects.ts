@@ -1,4 +1,5 @@
 import veloCover from "@/assets/velo-hero.png";
+import ds360Cover from "@/assets/ds360-cover.png";
 
 export type Project = {
   slug: string;
@@ -16,16 +17,17 @@ export const PROJECTS: Project[] = [
     name: "Deep Shield 360",
     desc: "AIML-driven video analysis software for surveillance intelligence.",
     hue: "from-brand-1/30 to-brand-2/30",
-    createdAt: "2025-08-12",
-    uploadedAt: "2025-09-01",
+    createdAt: "2026-05-04",
+    uploadedAt: "2026-05-04",
+    cover: ds360Cover,
   },
   {
     slug: "velo",
     name: "Velo",
     desc: "Rapid crisis-response requirement matching for professionals.",
     hue: "from-brand-3/30 to-brand-4/30",
-    createdAt: "2025-06-20",
-    uploadedAt: "2025-07-10",
+    createdAt: "2026-05-05",
+    uploadedAt: "2026-05-05",
     cover: veloCover,
   },
   {

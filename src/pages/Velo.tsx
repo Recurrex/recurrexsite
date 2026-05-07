@@ -22,11 +22,7 @@ import veloLogin from "@/assets/velo-login.jpg";
 import veloDispatch from "@/assets/velo-dispatch.jpg";
 import veloReport from "@/assets/velo-report.jpg";
 
-const today = new Date().toLocaleDateString(undefined, {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-});
+const DATE_CREATED = "5 May 2026";
 
 const PILLARS = [
   {
@@ -148,7 +144,7 @@ const Velo = () => {
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-2">
               <Calendar className="h-4 w-4" />
-              Date Created: <span className="text-foreground">{today}</span>
+              Date Created: <span className="text-foreground">{DATE_CREATED}</span>
             </span>
             <span className="inline-flex items-center gap-2">
               <User className="h-4 w-4" />
